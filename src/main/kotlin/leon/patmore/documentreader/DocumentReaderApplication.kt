@@ -1,11 +1,11 @@
-package leon.patmore.callbackreader
+package leon.patmore.documentreader
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class CallbackReaderApplication
+class DocumentReaderApplication
 
 fun main(args: Array<String>) {
-	runApplication<CallbackReaderApplication>(*args)
+	runApplication<DocumentReaderApplication>(*args)
 }

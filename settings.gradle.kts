@@ -1,1 +1,1 @@
-rootProject.name = "callback-reader"
+rootProject.name = "document-reader"
