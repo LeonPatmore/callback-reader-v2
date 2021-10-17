@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class DocumentReaderApplication
 
 fun main(args: Array<String>) {
-	runApplication<DocumentReaderApplication>(*args)
+    runApplication<DocumentReaderApplication>(*args)
 }
