@@ -25,6 +25,9 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-webflux")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.testcontainers:mongodb:1.16.0")
+    testImplementation("org.testcontainers:junit-jupiter:1.16.0")
+    testImplementation("io.projectreactor:reactor-test:3.1.0.RELEASE")
 }
 
 tasks.withType<KotlinCompile> {
