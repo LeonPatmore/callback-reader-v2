@@ -18,7 +18,7 @@ class MongoConfigurationTest(
 ) {
 
     companion object {
-        private val mongoDBContainer = MongoDBContainer("mongo:5.0.3")
+        private val MONGO_DB_CONTAINER = MongoDBContainer("mongo:5.0.3")
     }
 
     @Test
