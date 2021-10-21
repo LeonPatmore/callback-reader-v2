@@ -1,11 +1,9 @@
 package leon.patmore.documentreader
 
-import org.junit.jupiter.api.Test
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.test.context.SpringBootTest
 import org.testcontainers.containers.MongoDBContainer
 import org.testcontainers.junit.jupiter.Testcontainers
-import reactor.test.StepVerifier
 
 @SpringBootTest(classes = [DocumentReaderApplication::class])
 @EnableAutoConfiguration
@@ -21,5 +19,4 @@ class E2ETests {
 //        StepVerifier.create(callbackRepositoryMongo.save(objectMapper.readTree("""{"hi": "bye"}""")))
 //            .verifyComplete()
 //    }
-
 }

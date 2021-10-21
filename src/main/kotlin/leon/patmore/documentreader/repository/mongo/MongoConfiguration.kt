@@ -1,6 +1,5 @@
 package leon.patmore.documentreader.repository.mongo
 
-import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.mongodb.reactivestreams.client.MongoCollection
 import com.mongodb.reactivestreams.client.MongoDatabase
@@ -25,8 +24,10 @@ class MongoConfiguration {
     }
 
     @Bean
-    fun callbackRepositoryMongo(mongoCollection: MongoCollection<Document>,
-    objectMapper: ObjectMapper): CallbackRepositoryMongo {
+    fun callbackRepositoryMongo(
+        mongoCollection: MongoCollection<Document>,
+        objectMapper: ObjectMapper
+    ): CallbackRepositoryMongo {
         return CallbackRepositoryMongo(mongoCollection, objectMapper)
     }
 }
