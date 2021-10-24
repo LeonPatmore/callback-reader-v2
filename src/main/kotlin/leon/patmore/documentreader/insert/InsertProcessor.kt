@@ -6,7 +6,7 @@ import reactor.core.publisher.Mono
 
 class InsertProcessor(private val callbackRepository: CallbackRepository) {
 
-    private fun process(jsonNode: JsonNode): Mono<Void> {
+    fun process(jsonNode: JsonNode): Mono<Void> {
         return callbackRepository.save(jsonNode)
     }
 }
