@@ -15,12 +15,12 @@ class MongoConfiguration {
 
     @Bean
     fun mongoDatabase(mongoProperties: MongoProperties, reactiveMongoDatabaseFactory: ReactiveMongoDatabaseFactory): MongoDatabase {
-        return reactiveMongoDatabaseFactory.getMongoDatabase(mongoProperties.databaseName).block()!!
+        return reactiveMongoDatabaseFactory.mongoDatabase.block()!!
     }
 
     @Bean
     fun mongoCollection(mongoDatabase: MongoDatabase, mongoProperties: MongoProperties): MongoCollection<Document> {
-        return mongoDatabase.getCollection(mongoProperties.collectionName)
+        return mongoDatabase.getCollection(mongoProperties.collection)
     }
 
     @Bean

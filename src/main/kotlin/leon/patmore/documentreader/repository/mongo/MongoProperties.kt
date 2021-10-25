@@ -5,4 +5,4 @@ import org.springframework.boot.context.properties.ConstructorBinding
 
 @ConstructorBinding
 @ConfigurationProperties(prefix = "mongo")
-data class MongoProperties(val databaseName: String, val collectionName: String)
+data class MongoProperties(val collection: String)
